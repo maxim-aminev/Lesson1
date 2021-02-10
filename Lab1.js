@@ -50,7 +50,7 @@ function comparisonOfPopulation(oneCity, twoCity) {
   }
 }
 
-alert("Задание №1");
+
 let firstCity = new City('Magnitogorsk', 1929, 410733, 'Russia');
 let secondCity = new City('Chelyabinsk', 1736, 1150000, 'Russia');
 
