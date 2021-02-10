@@ -8,3 +8,4 @@ let isEven = (x) => {
 
 console.log(isEven(Number(a)));
 
+
