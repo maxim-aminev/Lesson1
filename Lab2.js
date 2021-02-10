@@ -59,10 +59,10 @@ for (let key in firstCity) {
 };
 let fourthCity = Object.assign({}, secondCity);
 
-thirdCity.nameCity = 'Moscow';
+thirdCity.name = 'Moscow';
 thirdCity.foundationDate = 1147;
 
-fourthCity.nameCity = 'Saint-Petersburg';
+fourthCity.name = 'Saint-Petersburg';
 fourthCity.foundationDate = 1703;
 
 showAllCitiesInformation(firstCity, secondCity, thirdCity, fourthCity);
