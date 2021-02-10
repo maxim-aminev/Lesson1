@@ -1,12 +1,61 @@
 "use strict";
 
-let a = prompt("Введите строку:", "");
+function City(name, foundationDate, population, country) {
+  return {
+    name: name,
+    foundationDate: foundationDate,
+    population: population,
+    country: country,
 
-let capitalise = (str) => {
-  let b = str.charAt(0).toUpperCase() + str.slice(1);
-
-  return b;
+    showFullInformation() {
+        return `Город ${this.name} был основан в ${this.foundationDate}` +  
+        ` и расположен в стране ${this.countryOfLocation}, численность населения города составляет ${this.population} человек`;
+    }
+  };
 }
 
-let c = capitalise(a);
-console.log(c);
+function comparisonCity(oneCity, twoCity) {
+  if (oneCity.name.length === twoCity.name.length) {
+    alert('Длина названия города ' + oneCity.name + ' равна ' + twoCity.name);
+  }
+  else if (oneCity.name.length >>> twoCity.name.length) {
+    alert('Длина названия города ' + oneCity.name + ' больше ' + twoCity.name);
+  }
+  else {
+    alert('Длина названия города ' + oneCity.name + ' меньше ' + twoCity.name);
+  }
+}
+
+function comparisonOfFoundingDates(oneCity, twoCity) {
+  if (oneCity.foundationDate === twoCity.foundationDate) {
+    alert('Дата основания города ' + oneCity.name + ' равна ' + twoCity.name);
+  }
+  else if (oneCity.foundationDate >>> twoCity.foundationDate) {
+    alert('Дата основания города ' + oneCity.name + ' больше ' + twoCity.name);
+  }
+  else {
+    alert('Дата основания города ' + oneCity.name + ' меньше ' + twoCity.name);
+  }
+}
+
+function comparisonOfPopulation(oneCity, twoCity) {
+  if (oneCity.population === twoCity.population) {
+    alert('Численность населения города ' + oneCity.name + ' равна ' + twoCity.name);
+  }
+  else if (oneCity.population >>> twoCity.population) {
+    alert('Численность населения города ' + oneCity.name + ' больше ' + twoCity.name);
+  }
+  else {
+    alert('Численность населения города ' + oneCity.name + ' меньше ' + twoCity.name);
+  }
+}
+
+
+let firstCity = new City('Magnitogorsk', 1929, 410733, 'Russia');
+let secondCity = new City('Chelyabinsk', 1736, 1150000, 'Russia');
+
+comparisonCity(firstCity, secondCity);
+comparisonOfFoundingDates(firstCity, secondCity);
+comparisonOfPopulation(firstCity, secondCity);
+alert(firstCity.showFullInformation());
+alert(secondCity.showFullInformation());
