@@ -50,6 +50,13 @@ function comparisonOfPopulation(oneCity, twoCity) {
   }
 }
 
+function showAllCitiesInformation(one, two, three, four) {
+  alert(one.showFullInformation());
+  alert(two.showFullInformation());
+  alert(three.showFullInformation());
+  alert(four.showFullInformation());
+}
+
 let firstCity = new City('Magnitogorsk', 1929, 410733, 'Russia');
 let secondCity = new City('Chelyabinsk', 1736, 1150000, 'Russia');
 
