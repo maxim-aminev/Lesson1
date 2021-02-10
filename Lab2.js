@@ -66,3 +66,4 @@ fourthCity.name = 'Saint-Petersburg';
 fourthCity.foundationDate = 1703;
 
 showAllCitiesInformation(firstCity, secondCity, thirdCity, fourthCity);
+
