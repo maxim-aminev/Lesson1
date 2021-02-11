@@ -18,7 +18,7 @@ function comparisonCity(oneCity, twoCity) {
   if (oneCity.name.length === twoCity.name.length) {
     alert('Длина названия города ' + oneCity.name + ' равна ' + twoCity.name);
   }
-  else if (oneCity.name.length >>> twoCity.name.length) {
+  else if (oneCity.name.length > twoCity.name.length) {
     alert('Длина названия города ' + oneCity.name + ' больше ' + twoCity.name);
   }
   else {
@@ -30,7 +30,7 @@ function comparisonOfFoundingDates(oneCity, twoCity) {
   if (oneCity.foundationDate === twoCity.foundationDate) {
     alert('Дата основания города ' + oneCity.name + ' равна ' + twoCity.name);
   }
-  else if (oneCity.foundationDate >>> twoCity.foundationDate) {
+  else if (oneCity.foundationDate > twoCity.foundationDate) {
     alert('Дата основания города ' + oneCity.name + ' больше ' + twoCity.name);
   }
   else {
@@ -42,7 +42,7 @@ function comparisonOfPopulation(oneCity, twoCity) {
   if (oneCity.population === twoCity.population) {
     alert('Численность населения города ' + oneCity.name + ' равна ' + twoCity.name);
   }
-  else if (oneCity.population >>> twoCity.population) {
+  else if (oneCity.population > twoCity.population) {
     alert('Численность населения города ' + oneCity.name + ' больше ' + twoCity.name);
   }
   else {
